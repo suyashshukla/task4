@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "httpser"
+    }
+  },
+  "defaultProject": "httpser",
+  "cli": {
+    "analytics": "ab53da6f-b7e8-400a-a27b-5a07a65ef296"
+  }
 }

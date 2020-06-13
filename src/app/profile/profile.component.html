@@ -1,0 +1,51 @@
+<div class="container" *ngFor="let myvar of arr">
+    <div id="date">
+        <span style="margin-top:1000px ;">{{myvar.created_at | date:'yyyy-MM-dd'}}</span>
+    </div>
+    
+    <div id ="name">
+        <span style="color: rgb(255, 0, 0);">{{myvar.title}}</span>
+        <br>
+        <a href="https//:www.googlw.com">{{myvar.url}}</a>
+    </div>
+    <div class="button">
+        <button type="button" class="btn btn-success butt"></button>
+    </div>
+    <br>
+    <hr id="line1">
+   
+    <a id="tag1"  >{{myvar.tags[0]}}</a>
+    <a id="tag1"  >{{myvar.tags[1]}}</a>
+    <a id="tag1"  >{{myvar.tags[2]}}</a>
+    <a id="tag1"  >{{myvar.tags[3]}}</a>
+   
+    
+    
+    <hr id="line1">
+    <p style="text-align: center;" >{{myvar.content}}</p>
+    <br><br>
+    <div id ="advt">
+        <span style="color: rgb(76, 0, 255);">Goal of life</span>
+        <br>
+        <a href="https//:www.googlw.com"></a>
+        <br>
+        <p style="text-align: center;"></p>
+    </div>
+    
+
+    
+    <hr id="line1">
+    <div  class="final" >
+        <span id="author">By {{myvar.author}}</span>
+        <span id="sr">{{myvar.rate}}</span>
+        <span class="material-icons icon">
+            star_rate 
+            </span>
+    </div>
+    
+    
+
+
+   
+    
+</div>
