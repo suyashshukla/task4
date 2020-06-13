@@ -1,12 +1,12 @@
 <div class="container" *ngFor="let myvar of arr">
     <div id="date">
-        <span style="margin-top:1000px ;">{{myvar.created_at | date:'yyyy-MM-dd'}}</span>
+        <span style="margin-top:1000px ;">{{myvar.address.city}}</span>
     </div>
     
     <div id ="name">
-        <span style="color: rgb(255, 0, 0);">{{myvar.title}}</span>
+        <span style="color: rgb(255, 0, 0);">{{myvar.name}}</span>
         <br>
-        <a href="https//:www.googlw.com">{{myvar.url}}</a>
+        <a href="https//:www.googlw.com">{{myvar.email}}</a>
     </div>
     <div class="button">
         <button type="button" class="btn btn-success butt"></button>
@@ -14,10 +14,9 @@
     <br>
     <hr id="line1">
    
-    <a id="tag1"  >{{myvar.tags[0]}}</a>
-    <a id="tag1"  >{{myvar.tags[1]}}</a>
-    <a id="tag1"  >{{myvar.tags[2]}}</a>
-    <a id="tag1"  >{{myvar.tags[3]}}</a>
+    <a id="tag1"  >{{myvar.address.suite}}</a>
+    <a id="tag1"  >{{myvar.address.street}}</a>
+  
    
     
     
@@ -25,19 +24,19 @@
     <p style="text-align: center;" >{{myvar.content}}</p>
     <br><br>
     <div id ="advt">
-        <span style="color: rgb(76, 0, 255);">Goal of life</span>
+        <span style="color: rgb(76, 0, 255);">{{myvar.website}}</span>
         <br>
         <a href="https//:www.googlw.com"></a>
         <br>
-        <p style="text-align: center;"></p>
+        <p style="text-align: center;">{{myvar.company.catchPhrase}} {{myvar.company.catchPhrase}} {{myvar.company.catchPhrase}} {{myvar.company.catchPhrase}}{{myvar.company.catchPhrase}}{{myvar.company.catchPhrase}}</p>
     </div>
     
 
     
     <hr id="line1">
     <div  class="final" >
-        <span id="author">By {{myvar.author}}</span>
-        <span id="sr">{{myvar.rate}}</span>
+        <span id="author">By {{myvar.username}}</span>
+        <span id="sr">{{myvar.id}}</span>
         <span class="material-icons icon">
             star_rate 
             </span>
