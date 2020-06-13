@@ -9,7 +9,7 @@ export class DataServiceService {
 
   constructor(private hp:HttpClient) { }
   info(): Observable<any>{
-    return this.hp.get('https://jsonplaceholder.typicode.com/users');
+    return this.hp.get('http://Backend.scrapshut.com/api/service/post');
 
   }
 
