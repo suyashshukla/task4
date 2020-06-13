@@ -12,7 +12,7 @@ export class ProfileComponent implements OnInit {
   arr={}
  
   ngOnInit(): void {
-    this.http.info().subscribe(pp => this.arr=pp)
+    this.http.info().subscribe(pp => this.arr=pp.results)
   }
   
 }
